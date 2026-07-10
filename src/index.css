@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary-container: #8cb6e9;
+  --color-on-secondary-container: #726044;
+  --color-outline: #707974;
+  --color-surface-dim: #dbdad5;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-container-lowest: #ffffff;
+  --color-background: #fbf9f4;
+  --color-surface-bright: #fbf9f4;
+  --color-error: #ba1a1a;
+  --color-on-primary-fixed-variant: #1d4f40;
+  --color-inverse-surface: #30312e;
+  --color-tertiary: #003056;
+  --color-on-primary-container: #8abda9;
+  --color-inverse-primary: #9ed1bd;
+  --color-secondary-fixed-dim: #dbc3a2;
+  --color-surface-container-low: #f5f3ee;
+  --color-on-surface-variant: #404945;
+  --color-surface-tint: #376757;
+  --color-secondary-fixed: #f8dfbc;
+  --color-on-background: #1b1c19;
+  --color-on-primary-fixed: #002117;
+  --color-surface: #fbf9f4;
+  --color-on-primary: #ffffff;
+  --color-tertiary-fixed: #d2e4ff;
+  --color-tertiary-container: #164774;
+  --color-on-tertiary-fixed: #001d36;
+  --color-on-tertiary-fixed-variant: #194976;
+  --color-outline-variant: #c0c9c3;
+  --color-surface-container-highest: #e4e2dd;
+  --color-surface-variant: #e4e2dd;
+  --color-on-error: #ffffff;
+  --color-on-surface: #1b1c19;
+  --color-error-container: #ffdad6;
+  --color-primary-fixed: #baeed9;
+  --color-secondary: #6e5b40;
+  --color-tertiary-fixed-dim: #a0cafe;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-primary-fixed-dim: #9ed1bd;
+  --color-primary: #003629;
+  --color-surface-container: #f0eee9;
+  --color-on-secondary: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary: #ffffff;
+  --color-secondary-container: #f6dcb9;
+  --color-on-secondary-fixed-variant: #55442b;
+  --color-primary-container: #1b4d3e;
+  --color-on-secondary-fixed: #261904;
+
+  --font-headline: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-label: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary-fixed-dim);
+  color: var(--color-on-primary-fixed);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0, 54, 41, 0.6), rgba(0, 54, 41, 0.2));
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Premium, brand-tinted shadows (green cast, not generic black) ----
+   Used on hero-adjacent imagery/cards so elevation reads as "expensive,"
+   not as a default Tailwind shadow-xl. */
+.shadow-luxe {
+  box-shadow: 0 30px 80px -20px rgba(0, 54, 41, 0.28);
+}
+.shadow-luxe-sm {
+  box-shadow: 0 16px 40px -12px rgba(0, 54, 41, 0.2);
+}
+
+/* ---- Hero: crop wrapper, sharp (no blur) ----
+   The reels are 1920x1080 files but the real footage is a 9:16 clip
+   pillarboxed dead-center (~34% solid black each side). Cropping to that
+   true 9:16 rectangle first -- rather than blurring the whole frame --
+   removes the black bars while keeping the video sharp (see
+   ai-brain/rules.md for the full pillarbox story and why this crop lands
+   exactly on the content boundary). */
+.hero3-crop-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.hero3-crop-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 9 / 16;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* ---- Hero: text crossfade (grid-stack trick auto-sizes wrapper to tallest slide) ---- */
+.hero3-text-wrap { display: grid; }
+.hero3-text-slide { grid-area: 1 / 1; opacity: 0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease; pointer-events: none; }
+.hero3-text-slide.is-active { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+/* ---- Hero: villa-switcher progress fill ----
+   Runs left-to-right over the autoplay duration (set via inline
+   animation-duration so it stays in sync with AUTOPLAY_MS in
+   HeroSlider.jsx); animation-play-state is toggled inline to pause in
+   place on hover rather than resetting. */
+@keyframes hero-progress-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.hero-progress-fill {
+  animation-name: hero-progress-fill;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Make calendar picker icon white for dark/floating BookingBar inputs */
+input.booking-bar-dark-input::-webkit-calendar-picker-indicator,
+.booking-bar-dark-input::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+  -webkit-filter: invert(1) !important;
+}
