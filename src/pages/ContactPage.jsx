@@ -38,7 +38,7 @@ export default function ContactPage() {
     <>
       {/* ===== HERO ===== */}
       <section className="bg-primary text-white pt-40 pb-20 px-6 sm:px-10 lg:px-20">
-        <Reveal className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+        <Reveal className="max-w-4xl mx-auto lg:mx-0 text-center lg:text-left">
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">Inquiries & Assistance</span>
           <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">Connect with your <em className="font-light">sanctuary.</em></h1>
           <p className="text-white/80 text-lg leading-relaxed">Our concierge is at your disposal — for a booking inquiry or any special request for your upcoming stay in Phuket.</p>

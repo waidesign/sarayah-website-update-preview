@@ -1,22 +1,22 @@
 export const PHUKET_MICRO_NODES = [
   {
     title: 'Surin Beach: The Elite Standard',
-    body: 'Known as the "St. Tropez of Phuket" — granite headlands, hidden cove paths, and the island\'s highest concentration of ultra-luxury real estate.',
+    body: 'Known as the "St. Tropez of Phuket" — granite headlands, the island\'s highest concentration of ultra-luxury real estate, and water that clears to lake-like visibility from November through April.',
     href: '/phuket/surin-beach-guide',
     cta: 'Deep Dive: Surin Guide',
   },
   {
     title: 'Yamu Cape: The Eastern Secret',
-    body: 'A quieter, easterly counterpoint — dramatic sunrise views and fine dining, a 15-minute drive across the island\'s narrowest point.',
+    body: 'A quieter, easterly counterpoint with dramatic sunrise views and fine dining — a 15-minute drive across the island\'s narrowest point from Thalang\'s west-coast beaches.',
   },
   {
     title: 'Mai Khao: Environmental Purity',
-    body: 'Part of Sirinat National Park, and the island\'s longest beach — a sea turtle nesting site, largely untouched by mass-market development.',
+    body: 'Part of Sirinat National Park and the island\'s longest beach — a sea turtle nesting site that remains largely untouched by mass-market development.',
   },
 ];
 
 export const PHUKET_STATS = [
-  { icon: 'location_on', label: 'Distance to Airport', value: '25 minutes, door-to-door.' },
+  { icon: 'flight_land', label: 'Distance to Airport', value: 'Phuket International Airport (HKT), 25 minutes, door-to-door.' },
   { icon: 'beach_access', label: 'Distance to Beaches', value: '5-10 minutes to Bang Tao, Surin, and Layan.' },
   { icon: 'shopping_cart', label: 'Dining & Retail', value: '3 minutes to Boat Avenue and Porto de Phuket.' },
 ];
@@ -26,14 +26,14 @@ export const PHUKET_LIST = [
     slug: '2-bedroom-private-pool-villa-phuket',
     category: '2-Bedroom Specialty',
     title: 'The 2-Bedroom Villa, Located',
-    teaser: 'How the 2-Bedroom Pool Villa fits into daily life in Thalang — distances, routines, and what\'s actually nearby.',
+    teaser: 'Drive times, distances, and what a small-group stay in Thalang actually looks like day to day.',
     image: '/assets/media/villas/2-bedroom/IMG_8219.jpg',
   },
   {
     slug: 'best-villas-thalang-district',
     category: 'Location Spotlight',
     title: 'Thalang District, by the Numbers',
-    teaser: 'The flat land, the beach list, and the drive times that make Thalang the north\'s strategic choice.',
+    teaser: 'Flat terrain, west-coast beaches, and 25 minutes to the airport — why the north is Phuket\'s strategic choice.',
     image: '/assets/media/villas/4-bedroom/IMG_8424.jpg',
   },
   {
@@ -47,7 +47,7 @@ export const PHUKET_LIST = [
     slug: 'surin-beach-guide',
     category: "Thalang's Jewel",
     title: 'Surin Beach Guide',
-    teaser: 'Millionaire\'s Row, the hidden path to Pansea, and why the water stays swim-ready almost year-round.',
+    teaser: 'Millionaire\'s Row, the unmarked trail to Pansea Beach, and why the water stays swim-ready almost year-round.',
     image: '/assets/img/phi_phi_islands_luxury_boat_1776812721087.png',
   },
 ];
@@ -59,9 +59,9 @@ export const PHUKET_DATA = {
     italicTitle: 'Located.',
     heroImage: '/assets/media/villas/2-bedroom/IMG_8219.jpg',
     paragraphs: [
-      'A 2-bedroom private pool villa suits small groups of 4-6 well — not because it\'s a scaled-down version of something bigger, but because it\'s purpose-built for intimacy.',
-      'Staying in a hotel in Bang Tao or Surin Beach means buffet lines, elevator waits, and a pool you share with everyone else on the property. A villa in Thalang District gives you an actually-private pool, ten minutes from the same beach clubs.',
-      'Booking direct with the owner also means avoiding the markup that aggregator and directory sites add on top of the nightly rate.',
+      'A [2-bedroom private pool villa](/villas/2-bedroom-private-pool) suits small groups of 4–6 precisely because it\'s purpose-built for intimacy — not a scaled-down version of something bigger. Two equal master suites, a full-length pool, and a kitchen designed to actually cook in.',
+      'Staying in a hotel in Bang Tao or [Surin Beach](/phuket/surin-beach-guide) means buffet lines, elevator waits, and a pool shared with everyone else on the property. A villa in [Thalang District](/phuket/best-villas-thalang-district) gives you a genuinely private pool, 10 minutes from the same beach clubs — without the resort fee.',
+      '[Booking direct with the owner](/booking) removes the 15–20% markup that aggregator and directory sites add on top of the nightly rate. Same villa, same dates, owner price.',
     ],
     comparisonTable: {
       title: 'The Practical Difference',
@@ -88,9 +88,9 @@ export const PHUKET_DATA = {
     italicTitle: 'by the Numbers.',
     heroImage: '/assets/media/villas/4-bedroom/IMG_8424.jpg',
     paragraphs: [
-      'Most visitors never get past the traffic of Kamala and Patong. Those who do find that northern Phuket offers considerably more space and silence than the south.',
-      'Thalang is the district of choice for families and travelers seeking a Bang Tao-adjacent pool villa, or a quiet retreat within reach of Cape Yamu.',
-      'Sarayah chose Thalang specifically for this reason — a sanctuary rather than just a room, minutes from Boat Avenue\'s dining and retail.',
+      'Most Phuket visitors never get past the traffic of Kamala and Patong. Those who do find that [northern Phuket](/phuket) offers considerably more space, silence, and logistical efficiency than the south.',
+      'Thalang is the district of choice for families and travelers seeking a Bang Tao-adjacent [pool villa](/villas) — flat terrain, larger plot sizes, and a quiet residential character that the steep southern cliffs simply cannot replicate.',
+      'Sarayah chose Thalang for exactly this reason — a sanctuary rather than just a room, five minutes from [Boat Avenue\'s dining and retail](/blog/boat-avenue-luxury-center) and 25 minutes from Phuket International Airport (HKT).',
     ],
     stats: [
       { icon: 'beach_access', title: 'Pristine Beaches', body: 'Surin, Bang Tao, Mai Khao' },
@@ -109,10 +109,10 @@ export const PHUKET_DATA = {
     italicTitle: 'Private Pool Villa.',
     heroImage: null,
     paragraphs: [
-      'Searching "private pool villas in Phuket" tends to lead to directory sites — plenty of photos, very little transparency about what you\'re actually booking.',
-      'Luxury here isn\'t about having the most listings. It\'s about having the right one.',
-      'Sri Panwa and Cape Panwa offer stunning views but can feel isolated. Thalang puts you close to local culture while staying ten minutes from Bang Tao and Surin\'s beach clubs.',
-      'A true sanctuary means walking from bedroom to pool without being overlooked by a neighbor — worth checking for specifically, not assuming from photos alone.',
+      'Searching "[private pool villas in Phuket](/villas)" tends to lead to directory sites — plenty of photos, very little transparency about what you\'re actually booking. "Private pool" is a filter setting on most platforms, not a commitment.',
+      'Luxury here isn\'t about having the most listings. It\'s about having the right one. The pool that\'s actually yours. The kitchen designed to cook in. The perimeter wall that means no one can see you from the street.',
+      '[Thalang District](/phuket/best-villas-thalang-district) puts you close to local culture while staying 10 minutes from Bang Tao and [Surin Beach](/phuket/surin-beach-guide) — the geographic balance that Sri Panwa and Cape Panwa, for all their drama, cannot offer.',
+      'A true sanctuary means walking from bedroom to pool without being overlooked by a neighbour — worth verifying specifically, not assuming from photographs.',
     ],
     checklist: {
       title: 'Why Thalang Is the New Standard',
@@ -139,10 +139,10 @@ export const PHUKET_DATA = {
     italicTitle: 'Beach Guide.',
     heroImage: '/assets/img/phi_phi_islands_luxury_boat_1776812721087.png',
     paragraphs: [
-      'Surin Beach is Phuket\'s "Millionaire\'s Row" — the highest concentration of high-net-worth real estate in Southeast Asia, flanked by granite headlands that shield it from the southern coast\'s heavier swell.',
-      'During high season (November-April), water clarity here rivals the Similan Islands. The beach itself remains undeveloped by mass-market resorts, preserved by the cliff-side ultra-luxury estates around it.',
-      'Staying directly on the Surin hillside means steep climbs and limited garden space. Sarayah\'s Thalang location gives you the same beach, ten minutes away, with a horizontal, expansive stay instead.',
-      'Our recommended rhythm is the "Surin-Layan Cycle" — mornings at the high-energy Surin Beach, afternoons at the quieter, pine-fringed Layan Beach nearby.',
+      '[Surin Beach](/phuket/surin-beach-guide) is Phuket\'s "Millionaire\'s Row" — the highest concentration of high-net-worth real estate in Southeast Asia, flanked by granite headlands that shield it from the southern coast\'s heavier swell.',
+      'During high season (November–April), water clarity here rivals the Similan Islands. The beach itself remains undeveloped by mass-market resorts, preserved by the physical topography of the surrounding cliff-side ultra-luxury estates.',
+      'Staying directly on the Surin hillside means steep climbs and limited garden space. Sarayah\'s [Thalang District location](/phuket/best-villas-thalang-district) gives you the same beach, 10 minutes away, with horizontal, expansive living rather than a cliff-side perch.',
+      'Our recommended rhythm is the "Surin-Layan Cycle" — mornings at the high-energy Surin beach clubs, afternoons at the quieter, pine-fringed Layan Beach lagoon nearby. Home for a private BBQ by evening.',
     ],
     pullQuote: 'Surin is where Phuket\'s residents go to remember why they moved here.',
     cards: [

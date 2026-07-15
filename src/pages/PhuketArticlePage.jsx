@@ -2,6 +2,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 import FaqAccordion from '../components/FaqAccordion';
 import { PHUKET_DATA } from '../data/phuket';
+import { parseInlineLinks } from '../utils/seo';
 
 export default function PhuketArticlePage() {
   const { slug } = useParams();
@@ -17,7 +18,7 @@ export default function PhuketArticlePage() {
           <img alt="" className="absolute inset-0 w-full h-full object-cover" src={article.heroImage} />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
           <Reveal className="relative z-10 w-full px-6 sm:px-10 lg:px-20 pt-40 pb-16">
-            <div className="max-w-3xl mx-auto lg:mx-0">
+            <div className="max-w-5xl mx-auto lg:mx-0">
               <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">{article.category}</span>
               <h1 className="font-headline text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
                 {article.title} <em className="font-light">{article.italicTitle}</em>
@@ -27,7 +28,7 @@ export default function PhuketArticlePage() {
         </section>
       ) : (
         <section className="bg-primary text-white pt-40 pb-20 px-6 sm:px-10 lg:px-20">
-          <Reveal className="max-w-3xl mx-auto lg:mx-0">
+          <Reveal className="max-w-5xl mx-auto lg:mx-0">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">{article.category}</span>
             <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
               {article.title} <em className="font-light">{article.italicTitle}</em>
@@ -38,14 +39,25 @@ export default function PhuketArticlePage() {
 
       {/* ===== BODY ===== */}
       <section className="py-20 sm:py-28 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-[720px] mx-auto space-y-6">
-          {article.pullQuote && (
-            <p className="font-headline italic text-2xl sm:text-3xl text-on-surface leading-relaxed border-l-4 border-primary/20 pl-6 mb-4">"{article.pullQuote}"</p>
-          )}
-          {article.paragraphs.map((p, i) => (
-            <p key={i} className="text-on-surface-variant leading-loose text-lg">{p}</p>
-          ))}
-        </Reveal>
+        <div className="max-w-[720px] mx-auto">
+          {/* Breadcrumbs */}
+          <Reveal className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-on-surface-variant/70 mb-12">
+            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+            <Link to="/phuket" className="hover:text-primary transition-colors">Phuket Guide</Link>
+            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span className="text-primary font-bold truncate max-w-[200px] sm:max-w-xs">{article.title}</span>
+          </Reveal>
+
+          <Reveal className="space-y-6">
+            {article.pullQuote && (
+              <p className="font-headline italic text-2xl sm:text-3xl text-on-surface leading-relaxed border-l-4 border-primary/20 pl-6 mb-4">"{article.pullQuote}"</p>
+            )}
+            {article.paragraphs.map((p, i) => (
+              <p key={i} className="text-on-surface-variant leading-loose text-lg">{parseInlineLinks(p)}</p>
+            ))}
+          </Reveal>
+        </div>
       </section>
 
       {/* ===== COMPARISON TABLE ===== */}

@@ -5,7 +5,7 @@ export default function SustainabilityPage() {
   return (
     <>
       <section className="bg-primary text-white pt-40 pb-20 px-6 sm:px-10 lg:px-20 text-center">
-        <Reveal className="max-w-2xl mx-auto">
+        <Reveal className="max-w-4xl mx-auto">
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">Our Ethos</span>
           <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">A Curated <em className="font-light">Sanctuary.</em></h1>
           <p className="text-white/80 text-lg leading-relaxed">Sustainability isn't a policy here — it's the foundation. True luxury should exist in harmony with the local environment and community of Thalang District.</p>
@@ -74,7 +74,7 @@ export default function SustainabilityPage() {
       <section className="py-24 sm:py-32 px-6 sm:px-8 bg-surface-container-low text-center">
         <Reveal>
           <h2 className="font-headline text-3xl sm:text-5xl italic mb-6">Quiet luxury, <em className="text-primary not-italic font-light">rooted in place.</em></h2>
-          <p className="text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">Our goal is to leave the Thalang District better than we found it, one guest at a time.</p>
+          <p className="text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">Our goal is to leave the Thalang District better than we found it, one guest at a time.</p>
           <Link to="/villas" className="inline-block bg-primary text-white px-10 py-4 rounded-lg font-bold tracking-widest uppercase text-xs hover:bg-primary-container transition-all">
             Return to Our Villas
           </Link>

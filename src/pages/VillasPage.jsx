@@ -54,7 +54,7 @@ export default function VillasPage() {
       {/* ===== VILLA COLLECTION ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <Reveal className="text-center max-w-2xl mx-auto mb-20 lg:mb-24">
+          <Reveal className="text-center max-w-4xl mx-auto mb-20 lg:mb-24">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">The Spaces</span>
             <h2 className="text-4xl sm:text-5xl font-headline text-on-surface italic">Choose your sanctuary.</h2>
           </Reveal>
@@ -88,7 +88,7 @@ export default function VillasPage() {
       {/* ===== COMPARISON ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-surface-container-low">
         <div className="max-w-[1280px] mx-auto">
-          <Reveal className="text-center mb-16 max-w-2xl mx-auto">
+          <Reveal className="text-center mb-16 max-w-4xl mx-auto">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">Selection Support</span>
             <h2 className="text-4xl sm:text-5xl font-headline text-on-surface italic">The definitive <br /><span className="font-light not-italic text-primary">comparison logic.</span></h2>
           </Reveal>
@@ -118,7 +118,7 @@ export default function VillasPage() {
       {/* ===== SIGNATURE FACILITIES ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <Reveal className="text-center mb-16 lg:mb-20 max-w-2xl mx-auto">
+          <Reveal className="text-center mb-16 lg:mb-20 max-w-4xl mx-auto">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">Standard of Excellence</span>
             <h2 className="text-4xl sm:text-5xl font-headline text-on-surface italic">Signature facilities in every villa.</h2>
           </Reveal>
@@ -180,7 +180,7 @@ export default function VillasPage() {
       <section className="py-32 sm:py-40 px-6 sm:px-8 bg-primary text-white text-center">
         <Reveal>
           <h2 className="font-headline text-5xl sm:text-7xl mb-10 leading-[1.05]">Find your<br /><em>perfect sanctuary.</em></h2>
-          <p className="text-white/70 mb-12 max-w-2xl mx-auto text-lg leading-relaxed">Join the circle of discerning travelers who choose Sarayah for the privacy they deserve.</p>
+          <p className="text-white/70 mb-12 max-w-4xl mx-auto text-lg leading-relaxed">Join the circle of discerning travelers who choose Sarayah for the privacy they deserve.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link to="/villas/2-bedroom-private-pool" className="bg-white text-primary px-12 py-5 rounded-lg font-bold tracking-widest uppercase text-xs hover:bg-primary-fixed-dim transition-all w-full sm:w-auto">Book the 2-Bedroom Villa</Link>
             <Link to="/villas/4-bedroom-villa" className="bg-transparent border border-white/30 px-12 py-5 rounded-lg font-bold tracking-widest uppercase text-xs hover:bg-white/10 transition-all w-full sm:w-auto">Book the 4-Bedroom Villa</Link>

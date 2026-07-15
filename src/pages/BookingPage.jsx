@@ -20,7 +20,7 @@ export default function BookingPage() {
     <>
       <section className="bg-primary text-white pt-40 pb-24 px-6 sm:px-10 lg:px-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <Reveal className="max-w-2xl mx-auto mb-10">
+          <Reveal className="max-w-4xl mx-auto mb-10">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">Availability</span>
             <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">Check your <em className="font-light">dates.</em></h1>
             <p className="text-white/80 text-lg leading-relaxed">Book directly for the best rates, early check-in priority, and a dedicated concierge from the moment you land.</p>

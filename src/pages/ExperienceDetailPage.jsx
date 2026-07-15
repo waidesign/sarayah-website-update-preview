@@ -21,7 +21,7 @@ export default function ExperienceDetailPage() {
 
       {/* ===== INTRO ===== */}
       <section className="py-24 sm:py-28 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-3xl mx-auto text-center">
+        <Reveal className="max-w-5xl mx-auto text-center">
           <p className="font-headline italic text-2xl sm:text-3xl text-on-surface leading-relaxed">{exp.intro}</p>
         </Reveal>
       </section>

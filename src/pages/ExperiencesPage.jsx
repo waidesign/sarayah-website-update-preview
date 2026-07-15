@@ -40,7 +40,7 @@ export default function ExperiencesPage() {
 
       {/* ===== CURATION PHILOSOPHY ===== */}
       <section className="py-28 sm:py-36 px-6 sm:px-8 bg-surface-container-low text-center">
-        <Reveal className="max-w-2xl mx-auto">
+        <Reveal className="max-w-4xl mx-auto">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Curation Philosophy</span>
           <h2 className="font-headline text-3xl sm:text-4xl italic text-on-surface mb-8 leading-relaxed">"Every experience we recommend is one we'd choose for ourselves — vetted, timed, and free of the crowds."</h2>
           <Link to="/contact" className="inline-block bg-primary text-on-primary px-10 py-4 rounded-lg font-bold tracking-widest uppercase text-xs hover:bg-primary-container transition-all">

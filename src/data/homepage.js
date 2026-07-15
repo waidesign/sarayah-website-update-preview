@@ -51,12 +51,12 @@ export const TOURS = [
   {
     name: 'James Bond Island Tour',
     body: 'Feel like a 007 agent among four islands and Thailand\'s fascinating Monkey Cave, on an unmissable day trip from Sarayah.',
-    image: '/assets/img/yacht_charter_phuket_1776802394443.png',
+    image: '/assets/img/jamesbond.jpg',
   },
   {
     name: 'Phi Phi Island Tour',
     body: 'A refreshing day at sea aboard an incredible tour of the heavenly Phi Phi Islands — one of the most impressive sights in Thailand.',
-    image: '/assets/img/phi_phi_islands_luxury_boat_1776812721087.png',
+    image: '/assets/img/phiphiislands.jpg',
   },
 ];
 
@@ -140,14 +140,14 @@ export const VILLAS = [
     name: '2-Bedroom Pool Villa',
     eyebrow: 'The Intimate Sanctuary',
     body: 'The definitive "work-from-paradise" setup — an integrated infinity pool, high-speed fiber, and a master suite that opens directly onto the water.',
-    image: '/assets/media/villas/2-bedroom/IMG_8219.jpg',
+    image: '/assets/media/villas/2-bedroom/in-pool-villa.jpg',
     href: '/villas/2-bedroom-private-pool',
   },
   {
     name: '4-Bedroom Grand Villa',
     eyebrow: 'The Grand Estate',
     body: 'A 400sqm estate that sleeps 12 comfortably — engineered for multi-generational travel, with the privacy hotel suites cannot offer.',
-    image: '/assets/media/villas/4-bedroom/IMG_8417.jpg',
+    image: '/assets/media/villas/4-bedroom/in-4-bed-villa.jpg',
     href: '/villas/4-bedroom-villa',
   },
 ];

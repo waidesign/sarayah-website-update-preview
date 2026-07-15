@@ -21,7 +21,7 @@ export default function FaqAccordion({ items, defaultOpenIndex = 0 }) {
             </button>
             <div className={`grid transition-all duration-300 ease-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
               <div className="overflow-hidden">
-                <p className="text-on-surface-variant leading-loose pb-8 max-w-3xl">{item.a}</p>
+                <p className="text-on-surface-variant leading-loose pb-8 max-w-5xl">{item.a}</p>
               </div>
             </div>
           </div>

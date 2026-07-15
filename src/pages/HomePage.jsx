@@ -22,23 +22,23 @@ export default function HomePage() {
 
       {/* ===== SECTION 1: STATEMENT (pure negative space, no image) ===== */}
       <section className="py-32 sm:py-40 lg:py-52 px-6 sm:px-8 bg-background">
-        <Reveal className="max-w-3xl mx-auto text-center">
+        <Reveal className="max-w-5xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-8 block">The Sarayah Mission</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">
             Luxury isn't gold leaf. <br className="hidden sm:block" />
             It's <em className="text-primary">space, silence,</em> <br className="hidden sm:block" />
             and sensory purity.
           </h2>
-          <p className="mt-10 text-on-surface-variant leading-loose text-lg max-w-xl mx-auto">Two private-pool estates in Thalang District, engineered for the traveler who values a locked gate over a lobby.</p>
+          <p className="mt-10 text-on-surface-variant leading-loose text-lg max-w-3xl mx-auto">Two private-pool estates in Thalang District, engineered for the traveler who values a locked gate over a lobby.</p>
         </Reveal>
       </section>
 
       {/* ===== SECTION 2: FULL-BLEED IMAGE BREAK, QUOTE OVERLAY ===== */}
       <Reveal as="section" className="relative h-[70vh] sm:h-[80vh] overflow-hidden">
-        <img alt="Detail of luxury villa architecture in Phuket" className="absolute inset-0 w-full h-full object-cover" src="/assets/media/villas/2-bedroom/IMG_8218.jpg" />
+        <img alt="Sarayah Phuket — luxury villa design detail" className="absolute inset-0 w-full h-full object-cover" src="/assets/img/cool-light-bulb.jpg" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
         <div className="relative z-10 h-full flex items-end px-6 sm:px-10 lg:px-20 pb-16 sm:pb-20">
-          <p className="text-white font-headline italic text-2xl sm:text-3xl lg:text-4xl leading-snug max-w-xl">
+          <p className="text-white font-headline italic text-2xl sm:text-3xl lg:text-4xl leading-snug max-w-3xl">
             "Architecture is the learned game, correct and magnificent, of forms assembled in the light."
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 4: OUR FACILITIES ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-2xl mx-auto mb-16 lg:mb-20 text-center">
+        <Reveal className="max-w-4xl mx-auto mb-16 lg:mb-20 text-center">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">In Every Villa</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">Our Facilities.<br /><em className="text-primary">Every comfort, considered.</em></h2>
           <p className="mt-8 text-on-surface-variant leading-loose text-lg">Not a checklist of add-ons — just what a private-pool estate should already have, built in from the start.</p>
@@ -102,7 +102,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 5: WHY SARAYAH PHUKET ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
-        <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
+        <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-20">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">The Sarayah Promise</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">Why <em className="text-primary">Sarayah</em> Phuket?</h2>
         </div>
@@ -121,7 +121,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 6: PHUKET TOURS (editorial overlay cards) ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-background border-t border-outline-variant/10">
-        <Reveal className="max-w-2xl mb-16 lg:mb-20">
+        <Reveal className="max-w-4xl mb-16 lg:mb-20">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Beyond the Villa</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">Phuket Tours.<br /><em className="text-primary">Special discount.</em></h2>
           <p className="mt-8 text-on-surface-variant leading-loose text-lg">Discover the Andaman's most spectacular destinations — Phang Nga Bay's limestone giants, the Phi Phi Islands' impossible blues — booked through your Sarayah concierge at a preferred rate.</p>
@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
           {TOURS.map((tour, i) => (
             <Reveal key={tour.name} delay={i * 100} className="group">
-              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-luxe">
+              <div className="relative aspect-[4/5] md:aspect-[4/3] rounded-2xl overflow-hidden shadow-luxe">
                 <img alt={tour.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src={tour.image} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-8 sm:p-10">
@@ -154,14 +154,14 @@ export default function HomePage() {
 
       {/* ===== SECTION 7: PHUKET EXPERIENCES (featured + compact list) ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-2xl mb-16 lg:mb-20">
+        <Reveal className="max-w-4xl mb-16 lg:mb-20">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Curated Experiences</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">Live it like a local.<br /><em className="text-primary">Curated by Sarayah.</em></h2>
           <p className="mt-8 text-on-surface-variant leading-loose text-lg">From private yacht charters to poolside tasting menus, our concierge arranges Phuket's finest experiences — vetted, booked, and billed with the same ease as your stay.</p>
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          <Reveal className="relative rounded-2xl overflow-hidden shadow-luxe aspect-[4/5] sm:aspect-video lg:aspect-auto">
+          <Reveal className="relative rounded-2xl overflow-hidden shadow-luxe aspect-[4/5] sm:aspect-video lg:aspect-[4/3]">
             <img alt={EXPERIENCES[0].title} className="absolute inset-0 w-full h-full object-cover" src={EXPERIENCES[0].image} />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-8 sm:p-10">
@@ -223,15 +223,15 @@ export default function HomePage() {
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-luxe">
                 <img
                   alt="Sunset over a private pier on the Andaman coastline near Sarayah"
-                  className="absolute left-0 h-full w-[200%] max-w-none object-cover"
-                  src="/assets/img/cape_panwa_vs_thalang_view_1776802429321.png"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  src="/assets/img/layan-beach.jpg"
                 />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-2xl shadow-luxe">
                 <img
-                  alt="Aerial view of a Sarayah villa pool amid the Thalang jungle canopy"
-                  className="absolute -left-full h-full w-[200%] max-w-none object-cover"
-                  src="/assets/img/cape_panwa_vs_thalang_view_1776802429321.png"
+                  alt="Sunrise over Cape Yamu coastline near Sarayah"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  src="/assets/img/yamu-sunrise.jpg"
                 />
               </div>
             </Reveal>
@@ -241,7 +241,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 9: THE SERVICE LAYER (dark, stat-led) ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-on-surface text-white">
-        <Reveal className="max-w-2xl mx-auto text-center mb-20 lg:mb-24">
+        <Reveal className="max-w-4xl mx-auto text-center mb-20 lg:mb-24">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-white/50 mb-6 block">Personalized Care</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline leading-[1.08]">Direct-to-owner <br /><em>accountability.</em></h2>
           <p className="mt-8 text-white/60 leading-loose text-lg">No faceless management agency. A 24/7 WhatsApp concierge, run by the team that built, maintains, and loves these properties.</p>
@@ -262,7 +262,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 10: PHOTO & VIDEO GALLERY -- 4-BEDROOM (mosaic grid) ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-surface-container-low">
-        <Reveal className="max-w-2xl mb-16 lg:mb-20">
+        <Reveal className="max-w-4xl mb-16 lg:mb-20">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Inside the Grand Estate</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">The Gallery.<br /><em className="text-primary">4-Bedroom Villa.</em></h2>
           <p className="mt-8 text-on-surface-variant leading-loose text-lg">Every room, every corner — captured exactly as you'll find it. No stock photography, no surprises at check-in.</p>
@@ -285,7 +285,7 @@ export default function HomePage() {
 
       {/* ===== SECTION 10B: PHOTO & VIDEO GALLERY -- 2-BEDROOM (mosaic grid) ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-2xl mb-16 lg:mb-20">
+        <Reveal className="max-w-4xl mb-16 lg:mb-20">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Inside the Intimate Sanctuary</span>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-headline text-on-surface leading-[1.08]">The Gallery.<br /><em className="text-primary">2-Bedroom Villa.</em></h2>
           <p className="mt-8 text-on-surface-variant leading-loose text-lg">The same standard, at an intimate scale — every room, every corner, exactly as you'll find it.</p>
@@ -316,7 +316,7 @@ export default function HomePage() {
         </div>
         <Reveal className="relative z-10 text-center">
           <h2 className="text-white font-headline text-5xl sm:text-7xl lg:text-8xl leading-[1.05] mb-10">Stop searching.<br /><em>Start arriving.</em></h2>
-          <p className="text-white/70 mb-14 max-w-2xl mx-auto text-lg leading-relaxed">Join the circle of discerning travelers who choose Sarayah for the privacy they actually deserve.</p>
+          <p className="text-white/70 mb-14 max-w-4xl mx-auto text-lg leading-relaxed">Join the circle of discerning travelers who choose Sarayah for the privacy they actually deserve.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link to="/booking" className="bg-white text-primary px-12 py-5 rounded-lg font-bold tracking-widest uppercase hover:bg-primary-fixed-dim transition-all w-full sm:w-auto text-xs">Book Direct & Secure Priority</Link>
             <Link to="/contact" className="bg-transparent border border-white/30 px-12 py-5 rounded-lg font-bold tracking-widest uppercase hover:bg-white/10 transition-all w-full sm:w-auto text-xs">Chat with our Concierge</Link>

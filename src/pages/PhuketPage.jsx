@@ -59,7 +59,7 @@ export default function PhuketPage() {
       {/* ===== MICRO-NODES ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white">
         <div className="max-w-[1280px] mx-auto">
-          <Reveal className="text-center mb-16 max-w-2xl mx-auto">
+          <Reveal className="text-center mb-16 max-w-4xl mx-auto">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">Beyond Thalang</span>
             <h2 className="text-3xl sm:text-4xl font-headline text-on-surface italic">Three directions worth knowing.</h2>
           </Reveal>
@@ -82,7 +82,7 @@ export default function PhuketPage() {
       {/* ===== GUIDES GRID ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-surface-container-low">
         <div className="max-w-[1280px] mx-auto">
-          <Reveal className="text-center mb-16 max-w-2xl mx-auto">
+          <Reveal className="text-center mb-16 max-w-4xl mx-auto">
             <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">Local Guides</span>
             <h2 className="text-3xl sm:text-4xl font-headline text-on-surface italic">Go deeper.</h2>
           </Reveal>

@@ -5,6 +5,7 @@ import Reveal from '../components/Reveal';
 import FaqAccordion from '../components/FaqAccordion';
 import BookingModal from '../components/BookingModal';
 import { VILLAS_DATA } from '../data/villas';
+import { parseInlineLinks } from '../utils/seo';
 
 export default function VillaDetailPage() {
   const { slug } = useParams();
@@ -33,7 +34,7 @@ export default function VillaDetailPage() {
               <span className="font-light not-italic text-secondary">{villa.ethos.italicTitle}</span>
             </h2>
             {villa.ethos.paragraphs.map((p, i) => (
-              <p key={i} className="text-on-surface-variant leading-loose text-lg">{p}</p>
+              <p key={i} className="text-on-surface-variant leading-loose text-lg">{parseInlineLinks(p)}</p>
             ))}
             <div className="grid grid-cols-2 gap-12 border-t border-outline-variant/15 pt-10">
               {villa.ethos.stats.map((s) => (
@@ -85,7 +86,7 @@ export default function VillaDetailPage() {
               <span className="font-light not-italic text-secondary">{villa.secondary.italicTitle}</span>
             </h3>
             {villa.secondary.paragraphs.map((p, i) => (
-              <p key={i} className="text-on-surface-variant leading-loose">{p}</p>
+              <p key={i} className="text-on-surface-variant leading-loose">{parseInlineLinks(p)}</p>
             ))}
           </Reveal>
         </div>
@@ -104,7 +105,7 @@ export default function VillaDetailPage() {
               <span className="font-light not-italic">{villa.neighborhood.italicTitle}</span>
             </h3>
             {villa.neighborhood.paragraphs.map((p, i) => (
-              <p key={i} className="text-on-surface-variant leading-loose">{p}</p>
+              <p key={i} className="text-on-surface-variant leading-loose">{parseInlineLinks(p)}</p>
             ))}
           </Reveal>
         </div>
@@ -137,7 +138,7 @@ export default function VillaDetailPage() {
 
       {/* ===== CHECK AVAILABILITY ===== */}
       <section className="py-28 sm:py-36 lg:py-44 px-6 sm:px-8 bg-white text-center">
-        <Reveal className="max-w-2xl mx-auto">
+        <Reveal className="max-w-4xl mx-auto">
           <span className="text-xs uppercase tracking-[0.4em] font-bold text-primary mb-6 block">Availability</span>
           <h2 className="font-headline text-4xl sm:text-5xl mb-8">Pick your <em className="text-primary">escape dates.</em></h2>
           <p className="text-on-surface-variant leading-relaxed mb-10">Most private pool villas in Phuket book up months in advance. Check your dates and lock in your sanctuary — no middleman, no extra fees.</p>
@@ -154,7 +155,7 @@ export default function VillaDetailPage() {
       {/* ===== TESTIMONIAL ===== */}
       {villa.testimonial && (
         <section className="py-24 px-6 sm:px-8 bg-surface-container-low">
-          <Reveal className="max-w-3xl mx-auto text-center">
+          <Reveal className="max-w-5xl mx-auto text-center">
             <div className="flex justify-center gap-1 mb-8">
               {Array.from({ length: 5 }).map((_, i) => (
                 <span key={i} className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -171,7 +172,7 @@ export default function VillaDetailPage() {
 
       {/* ===== CROSS-LINK ===== */}
       <section className="py-24 px-6 sm:px-8 bg-white">
-        <Reveal className="max-w-2xl mx-auto text-center">
+        <Reveal className="max-w-4xl mx-auto text-center">
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4 block">{villa.crossLink.eyebrow}</span>
           <h2 className="text-3xl sm:text-4xl font-headline mb-4">{villa.crossLink.title}</h2>
           <p className="text-on-surface-variant mb-10 leading-relaxed">{villa.crossLink.body}</p>

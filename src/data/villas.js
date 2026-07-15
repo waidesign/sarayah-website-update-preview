@@ -13,12 +13,12 @@ export const VILLAS_DATA = {
     ],
     ethos: {
       eyebrow: 'Architecture of Autonomy',
-      title: 'A symphony of',
-      italicTitle: 'light and layered privacy.',
+      title: 'Not just built.',
+      italicTitle: 'Choreographed.',
       paragraphs: [
-        'The 2-Bedroom Private Pool Villa was not merely built; it was choreographed. Most private pool villas in Phuket sacrifice spatial integrity for density — at Sarayah, we reversed the equation.',
-        'High-pitched vaulted ceilings and a strategic cross-ventilation grid keep the villa naturally cool through the peak tropical midday, while dense landscape buffering ensures your pool is never overlooked by neighbors.',
-        'Every line of sight from the master suite frames the tropical canopy while shielding you from the outside world — the removal of visual clutter, so the mind can properly reset.',
+        'Most [private pool villas in Phuket](/phuket/private-pool-villas-phuket) sacrifice spatial integrity for density — more units, thinner walls, smaller pools. At Sarayah, we reversed the equation. One villa, one pool, one family\'s worth of privacy.',
+        'High-pitched vaulted ceilings and a strategic cross-ventilation grid keep the villa naturally cool through the tropical midday — reducing air-conditioning dependence rather than fighting the heat with it. Dense landscape buffering ensures your pool is never overlooked by a neighbour.',
+        'Every line of sight from the master suite frames the tropical canopy while screening the outside world. The architecture doesn\'t just house you — it protects your peace of mind.',
       ],
       stats: [
         { value: '200sqm', label: 'Private Living Space' },
@@ -33,12 +33,12 @@ export const VILLAS_DATA = {
       { image: '/assets/media/villas/2-bedroom/IMG_8218.jpg', alt: '2-Bedroom villa architectural detail' },
     ],
     secondary: {
-      eyebrow: 'Restorative Sleep',
-      title: 'Engineered for',
-      italicTitle: 'acoustic seclusion.',
+      eyebrow: 'Leisure & Dining',
+      title: 'Designed for movie nights and',
+      italicTitle: 'outdoor grilling.',
       paragraphs: [
-        'Most Phuket pool villa rentals are clustered tightly together, sharing thin perimeter walls. Sarayah uses double-layer masonry and strategic landscape buffering to create an acoustic shield around your sleeping quarters.',
-        'High-thread-count linens, silent-operation air conditioning, and en-suite bathrooms that serve as private spas — rainfall showers, heated water, and locally sourced organic toiletries.',
+        'The villa is built for relaxation, inside and out. Unwind in the living pavilion featuring a 60" Smart TV fully loaded with Netflix, connected to fiber-fast Wi-Fi. Outside, the terrace features a custom stone BBQ Pit, perfect for grilled Andaman seafood under the tropical canopy.',
+        'When the screens go off, double-layer masonry and silent-operation air conditioning ensure a transition into deep, restorative sleep. No hotel corridor noise, just the sound of the pool.',
       ],
       image: '/assets/img/wellness_spa_1776802376309.png',
       rounded: 'rounded-full',
@@ -48,8 +48,8 @@ export const VILLAS_DATA = {
       title: 'Thalang: the choice for',
       italicTitle: 'discerning couples.',
       paragraphs: [
-        'For a couple in the 2-Bedroom villa, proximity to Bang Tao and Surin Beach provides a social ecosystem that’s sophisticated rather than chaotic — a private yoga session poolside, brunch on Boat Avenue, an afternoon at Layan Beach, home by evening for a private BBQ under the stars.',
-        'You’re never more than a few minutes from the island’s best wine cellars, beach clubs, and galleries, yet your villa remains an impenetrable fortress of peace.',
+        'From the 2-Bedroom villa, the daily rhythm writes itself: a private yoga session poolside, brunch at Boat Avenue, afternoon at [Surin Beach](/phuket/surin-beach-guide), home by evening for a private BBQ. [Thalang District](/phuket/best-villas-thalang-district) provides a sophisticated social ecosystem without the chaos — 10 minutes to Bang Tao\'s beach clubs, 5 minutes to the island\'s best wine bar.',
+        'Phuket International Airport (HKT) is 25 minutes door-to-door. The taxi arrives, the bags go in, and you\'re poolside before the jet lag has a chance to set in.',
       ],
       image: '/assets/img/cape_panwa_vs_thalang_view_1776802429321.png',
     },
@@ -60,8 +60,8 @@ export const VILLAS_DATA = {
           { icon: 'pool', label: 'Private Swimming Pool' },
           { icon: 'deck', label: 'Sunbathing Deck & Garden' },
           { icon: 'ac_unit', label: 'Air Conditioning (all rooms)' },
-          { icon: 'tv', label: 'Satellite / Cable TV' },
-          { icon: 'wifi', label: 'Free Wi-Fi' },
+          { icon: 'tv', label: '60" Smart TV with Netflix' },
+          { icon: 'wifi', label: 'Fiber-Fast Wi-Fi' },
         ],
       },
       {
@@ -70,6 +70,7 @@ export const VILLAS_DATA = {
           { icon: 'restaurant', label: 'Fully Equipped Kitchen' },
           { icon: 'kitchen', label: 'Refrigerator' },
           { icon: 'dining', label: 'Dining Area' },
+          { icon: 'outdoor_grill', label: 'Custom Stone BBQ Pit' },
         ],
       },
       {
@@ -84,9 +85,9 @@ export const VILLAS_DATA = {
       },
     ],
     testimonial: {
-      quote: 'An absolute dream. The attention to detail in the Private Pool Villa was beyond anything we’ve experienced in Phuket. The pool, the garden, the silence — we felt completely at home.',
-      name: 'Sarah & Mark Jenkins',
-      source: 'Google Local Guide',
+      quote: 'Truly a sanctuary. We’ve stayed in many villas across Thailand, but the layout and silence here are in a different league. A rare find.',
+      name: 'James & Elena R.',
+      source: 'Verified Guest',
     },
     crossLink: {
       eyebrow: 'Need More Space?',
@@ -109,8 +110,8 @@ export const VILLAS_DATA = {
         a: 'Absolutely. We can arrange private luxury transfers from Phuket International Airport (HKT), which is just a 25-minute drive from our villas.',
       },
     ],
-    ctaTitle: 'Your private',
-    ctaItalic: 'sanctuary awaits.',
+    ctaTitle: 'Your own private island.',
+    ctaItalic: 'Only better.',
   },
   '4-bedroom-villa': {
     slug: '4-bedroom-villa',
@@ -127,12 +128,12 @@ export const VILLAS_DATA = {
     ],
     ethos: {
       eyebrow: 'Grand Scale Autonomy',
-      title: 'Scale without',
-      italicTitle: 'sacrificing individual soul.',
+      title: 'Twelve people.',
+      italicTitle: 'Nobody feels crowded.',
       paragraphs: [
-        'The 4-Bedroom Grand Villa was engineered for the "macro-group" — the large family or team that needs shared community spaces without the noise bleed and privacy compromises of a hotel wing.',
-        'Where many luxury villas in Phuket treat the pool as the only focal point, we prioritized the social commons: a seamless ground floor of polished concrete and warm timber, flowing between the professional galley and the oversized dining terrace.',
-        'Horizontal space — not a hillside squeeze — means massive en-suite bedrooms that act as secondary sanctuaries, each acoustically isolated from the main social hub. Twelve people, one roof, nobody feels crowded.',
+        'The 4-Bedroom Grand Villa is built for the macro-group — teams or families who need shared common areas without the noise bleed and privacy compromises of a resort wing. Twelve guests, four suites, one roof.',
+        'Where many [luxury villas in Phuket](/phuket/private-pool-villas-phuket) fixate on the pool, we prioritised the social commons: a ground floor of polished concrete and warm timber, flowing from a professional galley to the dining terrace.',
+        'Horizontal space ensures the ground floor gathers, while the upper floor provides a retreat. Each room is acoustically isolated, ensuring true luxury: the ability to find silence in the heart of the group.',
       ],
       stats: [
         { value: '12', label: 'Maximum Occupancy' },
@@ -150,10 +151,10 @@ export const VILLAS_DATA = {
     secondary: {
       eyebrow: 'The Communal Hearth',
       title: 'The professional',
-      italicTitle: 'chef’s galley.',
+      italicTitle: 'chef\'s galley & BBQ.',
       paragraphs: [
-        'A 4-bedroom luxury villa lives and dies by its kitchen capacity. Dual refrigeration systems, industrial-grade induction cooktops, and a dedicated espresso station make this a kitchen built for the grand gathering.',
-        'The flow from the interior galley to the al fresco BBQ terrace is seamless — the "chef of the day" stays part of the conversation while preparing Andaman seafood over the coals.',
+        'A large villa lives and dies by its kitchen. Dual refrigeration systems, industrial-grade induction cooktops, and a dedicated espresso station — this is a kitchen built for the grand gathering, not the catered event.',
+        'The flow from the interior galley to the al fresco BBQ Pit station is seamless. Relax in the grand living space with a 65" Smart TV with Netflix and fiber Wi-Fi, while the "chef of the day" stays part of the conversation over the coals. Everyone\'s included. Nobody\'s stuck in the kitchen alone.',
       ],
       image: '/assets/media/villas/4-bedroom/IMG_8407.jpg',
       rounded: 'rounded-3xl',
@@ -163,8 +164,8 @@ export const VILLAS_DATA = {
       title: 'Thalang: the strategic',
       italicTitle: 'base for your entourage.',
       paragraphs: [
-        'Traveling as a group of 10-12, Phuket’s logistics can become a burden. Thalang places your group at the most efficient crossroads on the island — 25 minutes from the airport, meaning your entire party can be poolside within an hour of touchdown.',
-        'We recommend coordinated sunset sessions at Layan Beach, 10 minutes away, and Boat Avenue for large-table dining — a rarity in the island’s more boutique corners. Ask about our 12-seater van with driver, so your entire party arrives together.',
+        'Travelling as a group of 10–12, Phuket\'s logistics can become a real tax on a trip. [Thalang District](/phuket/best-villas-thalang-district) places your group at the island\'s most efficient crossroads — 25 minutes from Phuket International Airport (HKT), meaning your entire party can be poolside within 40 minutes of landing.',
+        'We recommend coordinated sunset sessions at Layan Beach (10 minutes) and [Boat Avenue](/blog/boat-avenue-luxury-center) for large-table dining — rare in the island\'s more boutique corners. Ask about our 12-seater van with driver: your entire party arrives together, nobody splits into separate taxis.',
       ],
       image: '/assets/img/yacht_charter_phuket_1776802394443.png',
     },
@@ -173,7 +174,7 @@ export const VILLAS_DATA = {
         title: 'Kitchen & Dining',
         items: [
           { icon: 'restaurant', label: 'Full Kitchen, All Utensils Supplied' },
-          { icon: 'outdoor_grill', label: 'Outdoor BBQ & Large Dining Area' },
+          { icon: 'outdoor_grill', label: 'Outdoor BBQ Pit & Dining Area' },
           { icon: 'kitchen', label: 'Refrigerator & Household Essentials' },
         ],
       },
@@ -182,7 +183,7 @@ export const VILLAS_DATA = {
         items: [
           { icon: 'vpn_key', label: 'Secure Self Check-in' },
           { icon: 'deck', label: 'Sunbathing Deck & Lush Garden' },
-          { icon: 'live_tv', label: 'High-Speed Internet with Netflix' },
+          { icon: 'live_tv', label: '65" Smart TV with Netflix' },
         ],
       },
       {

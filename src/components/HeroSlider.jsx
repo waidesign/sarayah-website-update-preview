@@ -23,14 +23,14 @@ export default function HeroSlider() {
           clipping -- the bottom padding + gap below are tuned to clear the
           WhatsApp float / mobile nav (ai-brain/rules.md). */}
       <div className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center gap-4 sm:gap-12 px-6 sm:px-10 lg:px-20 pt-28 pb-44 sm:pb-28 lg:pb-20">
-        <div className="max-w-2xl mx-auto flex flex-col items-center">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-3 sm:mb-6 block">Two Villas · Thalang District, Phuket</span>
           <h1 className="font-headline text-white text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-3 sm:mb-6 tracking-tight">
             Refuge for two.
             <br />
             <span className="italic font-light">Room for twelve.</span>
           </h1>
-          <p className="hidden sm:block text-white/80 leading-relaxed max-w-xl mb-10 text-lg mx-auto">
+          <p className="hidden sm:block text-white/80 leading-relaxed max-w-3xl mb-10 text-lg mx-auto">
             Two private-pool sanctuaries in Thalang District — an intimate 2-bedroom refuge for couples, and a 4-bedroom grand estate built for gatherings. Direct-to-owner, always private.
           </p>
 

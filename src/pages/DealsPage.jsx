@@ -36,7 +36,7 @@ export default function DealsPage() {
   return (
     <>
       <section className="bg-primary text-white pt-40 pb-20 px-6 sm:px-10 lg:px-20 text-center">
-        <Reveal className="max-w-2xl mx-auto">
+        <Reveal className="max-w-4xl mx-auto">
           <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/60 mb-6 block">Exclusive Benefits</span>
           <h1 className="font-headline text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">Special <em className="font-light">Stay Offers.</em></h1>
         </Reveal>
